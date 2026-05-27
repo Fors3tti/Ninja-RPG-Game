@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 8528056}
   - component: {fileID: 8528054}
   - component: {fileID: 8528057}
+  - component: {fileID: 8528058}
   m_Layer: 0
   m_Name: Player_Ninja
   m_TagString: Untagged
@@ -289,6 +290,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   stats: {fileID: 11400000, guid: e9703d0febb576d44bebe728055c60d1, type: 2}
+--- !u!114 &8528058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccbd6310005951249884724561c09de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimations
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
