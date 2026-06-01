@@ -25,6 +25,14 @@ public class UIManager : MonoBehaviour
 
     private void UpdatePlayerUI()
     {
+        healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount, 
+            stats.Health / stats.MaxHealth, 10f * Time.deltaTime);
+        manaBar.fillAmount = Mathf.Lerp(manaBar.fillAmount,
+            stats.Mana / stats.MaxMana, 10f * Time.deltaTime);
+        expBar.fillAmount = Mathf.Lerp(expBar.fillAmount,
+            stats.CurrentExp / stats.NextLevelExp, 10f * Time.deltaTime);
+
+
         levelTMP.text = $"Level {stats.Level}";
         healthTMP.text = $"{stats.Health} / {stats.MaxHealth}";
         manaTMP.text = $"{stats.Mana} / {stats.MaxMana}";
