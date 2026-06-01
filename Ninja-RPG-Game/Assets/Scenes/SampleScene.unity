@@ -1491,7 +1491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 3.7475}
+  m_AnchoredPosition: {x: 0, y: 3.7474995}
   m_SizeDelta: {x: 0, y: 7.505}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1680720728
@@ -1668,7 +1668,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 3.7475}
+  m_AnchoredPosition: {x: 0, y: 3.7474995}
   m_SizeDelta: {x: 0, y: 7.505}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1813964818
@@ -1805,7 +1805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 3.7475}
+  m_AnchoredPosition: {x: 0, y: 3.7474995}
   m_SizeDelta: {x: 0, y: 7.505}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1958938685
@@ -1908,6 +1908,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958938683}
   m_CullTransparentMesh: 1
+--- !u!1 &1971498408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1971498409}
+  - component: {fileID: 1971498410}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1971498409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971498408}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102838254}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1971498410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971498408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c828d7945020c4459864f81d8ce6aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  stats: {fileID: 11400000, guid: e9703d0febb576d44bebe728055c60d1, type: 2}
+  healthBar: {fileID: 729276743}
+  manaBar: {fileID: 713946032}
+  expBar: {fileID: 2115660235}
+  levelTMP: {fileID: 757850752}
+  healthTMP: {fileID: 1680720728}
+  manaTMP: {fileID: 1813964818}
+  expTMP: {fileID: 1958938685}
 --- !u!1 &2030702508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,6 +2144,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1222152135}
+  - {fileID: 1971498409}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2115660233
