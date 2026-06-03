@@ -41,8 +41,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floor
+    uniqueID: 812742999
+    locked: 0
   - name: Prop
     uniqueID: 4273888339
+    locked: 0
+  - name: Wall
+    uniqueID: 429961203
+    locked: 0
+  - name: House
+    uniqueID: 1074615341
     locked: 0
   - name: Player
     uniqueID: 2260714109
