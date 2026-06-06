@@ -902,6 +902,7 @@ GameObject:
   - component: {fileID: 205122494}
   - component: {fileID: 205122493}
   - component: {fileID: 205122492}
+  - component: {fileID: 205122497}
   m_Layer: 6
   m_Name: Enemy_Flam
   m_TagString: Enemy
@@ -1068,6 +1069,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &205122497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205122491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29722c357d657e4b87cd6e87e7df24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBrain
+  initState: 
+  states: []
 --- !u!1 &215377116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,6 +1096,7 @@ GameObject:
   - component: {fileID: 215377119}
   - component: {fileID: 215377118}
   - component: {fileID: 215377117}
+  - component: {fileID: 215377122}
   m_Layer: 6
   m_Name: Enemy_Snake
   m_TagString: Enemy
@@ -1247,6 +1263,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &215377122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215377116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29722c357d657e4b87cd6e87e7df24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBrain
+  initState: 
+  states: []
 --- !u!1 &427369931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,6 +1290,7 @@ GameObject:
   - component: {fileID: 427369934}
   - component: {fileID: 427369933}
   - component: {fileID: 427369932}
+  - component: {fileID: 427369937}
   m_Layer: 6
   m_Name: Enemy_Cyclope
   m_TagString: Enemy
@@ -1426,6 +1457,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &427369937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427369931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29722c357d657e4b87cd6e87e7df24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBrain
+  initState: 
+  states: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,6 +1621,7 @@ GameObject:
   - component: {fileID: 541010859}
   - component: {fileID: 541010858}
   - component: {fileID: 541010860}
+  - component: {fileID: 541010861}
   m_Layer: 6
   m_Name: Enemy_Bamboo
   m_TagString: Enemy
@@ -1742,6 +1788,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &541010861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541010855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29722c357d657e4b87cd6e87e7df24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBrain
+  initState: 
+  states: []
 --- !u!1 &593097554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,6 +2265,7 @@ GameObject:
   - component: {fileID: 944513647}
   - component: {fileID: 944513643}
   - component: {fileID: 944513642}
+  - component: {fileID: 944513648}
   m_Layer: 6
   m_Name: Enemy_Beast
   m_TagString: Enemy
@@ -2371,6 +2432,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &944513648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944513641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29722c357d657e4b87cd6e87e7df24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBrain
+  initState: 
+  states: []
 --- !u!1 &974022470
 GameObject:
   m_ObjectHideFlags: 0
@@ -4582,6 +4657,7 @@ GameObject:
   - component: {fileID: 1233518471}
   - component: {fileID: 1233518470}
   - component: {fileID: 1233518469}
+  - component: {fileID: 1233518474}
   m_Layer: 6
   m_Name: Enemy_Mushroom
   m_TagString: Enemy
@@ -4748,6 +4824,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1233518474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233518468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29722c357d657e4b87cd6e87e7df24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBrain
+  initState: 
+  states: []
 --- !u!1 &1243943256
 GameObject:
   m_ObjectHideFlags: 0
@@ -5202,6 +5292,7 @@ GameObject:
   - component: {fileID: 1463479098}
   - component: {fileID: 1463479097}
   - component: {fileID: 1463479096}
+  - component: {fileID: 1463479101}
   m_Layer: 6
   m_Name: Enemy_Slime
   m_TagString: Enemy
@@ -5368,6 +5459,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1463479101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463479095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29722c357d657e4b87cd6e87e7df24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBrain
+  initState: 
+  states: []
 --- !u!1 &1495773108
 GameObject:
   m_ObjectHideFlags: 0
@@ -5381,6 +5486,7 @@ GameObject:
   - component: {fileID: 1495773111}
   - component: {fileID: 1495773110}
   - component: {fileID: 1495773109}
+  - component: {fileID: 1495773114}
   m_Layer: 6
   m_Name: Enemy_Reptile
   m_TagString: Enemy
@@ -5547,6 +5653,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1495773114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495773108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29722c357d657e4b87cd6e87e7df24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBrain
+  initState: 
+  states: []
 --- !u!1 &1501403146
 GameObject:
   m_ObjectHideFlags: 0
