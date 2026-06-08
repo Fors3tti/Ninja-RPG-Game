@@ -6,6 +6,7 @@ public class EnemyBrain : MonoBehaviour
     [SerializeField] private FSMState[] states;
 
     public FSMState CurrentState { get; set; }
+    public Transform Player { get; set; }
 
     private void Start()
     {

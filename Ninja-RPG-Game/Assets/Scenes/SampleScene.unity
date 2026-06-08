@@ -5644,6 +5644,7 @@ GameObject:
   - component: {fileID: 1495773109}
   - component: {fileID: 1495773114}
   - component: {fileID: 1495773115}
+  - component: {fileID: 1495773116}
   m_Layer: 6
   m_Name: Enemy_Reptile
   m_TagString: Enemy
@@ -5827,7 +5828,16 @@ MonoBehaviour:
   - ID: Wander
     Actions:
     - {fileID: 1495773115}
-    Transitions: []
+    Transitions:
+    - Decision: {fileID: 1495773116}
+      TrueState: Chase
+      FalseState: 
+  - ID: Chase
+    Actions: []
+    Transitions:
+    - Decision: {fileID: 1495773116}
+      TrueState: 
+      FalseState: Wander
 --- !u!114 &1495773115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5843,6 +5853,22 @@ MonoBehaviour:
   speed: 1.5
   wanderTime: 1
   moveRange: {x: 2, y: 2}
+--- !u!114 &1495773116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495773108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9b9c99843996143b70100b6833b967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionDetectPlayer
+  range: 3
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &1501403146
 GameObject:
   m_ObjectHideFlags: 0
