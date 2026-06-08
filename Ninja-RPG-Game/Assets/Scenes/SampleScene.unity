@@ -2347,6 +2347,7 @@ GameObject:
   - component: {fileID: 944513642}
   - component: {fileID: 944513648}
   - component: {fileID: 944513649}
+  - component: {fileID: 944513650}
   m_Layer: 6
   m_Name: Enemy_Beast
   m_TagString: Enemy
@@ -2546,6 +2547,23 @@ MonoBehaviour:
   speed: 1.5
   wanderTime: 1
   moveRange: {x: 2, y: 2}
+--- !u!114 &944513650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944513641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692cf528bb6fdd94fa8d885d65b2bbc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Waypoint
+  points:
+  - {x: 2, y: 0, z: 0}
+  - {x: 0, y: 2, z: 0}
+  - {x: -2, y: 0, z: 0}
+  - {x: 0, y: -2, z: 0}
 --- !u!1 &974022470
 GameObject:
   m_ObjectHideFlags: 0
