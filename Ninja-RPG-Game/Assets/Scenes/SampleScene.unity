@@ -2345,9 +2345,9 @@ GameObject:
   - component: {fileID: 944513647}
   - component: {fileID: 944513643}
   - component: {fileID: 944513642}
-  - component: {fileID: 944513648}
-  - component: {fileID: 944513649}
   - component: {fileID: 944513650}
+  - component: {fileID: 944513648}
+  - component: {fileID: 944513651}
   m_Layer: 6
   m_Name: Enemy_Beast
   m_TagString: Enemy
@@ -2526,27 +2526,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b29722c357d657e4b87cd6e87e7df24d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBrain
-  initState: Wander
+  initState: Patrol
   states:
-  - ID: Wander
+  - ID: Patrol
     Actions:
-    - {fileID: 944513649}
+    - {fileID: 944513651}
     Transitions: []
---- !u!114 &944513649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 944513641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70921fbea628e094c9274b48400d836d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ActionWander
-  speed: 1.5
-  wanderTime: 1
-  moveRange: {x: 2, y: 2}
 --- !u!114 &944513650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2560,10 +2545,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Waypoint
   points:
-  - {x: 2, y: 0, z: 0}
-  - {x: 0, y: 2, z: 0}
-  - {x: -2, y: 0, z: 0}
-  - {x: 0, y: -2, z: 0}
+  - {x: 0, y: 1, z: 0}
+  - {x: 1, y: 0, z: 0}
+  - {x: 0, y: -1, z: 0}
+  - {x: -1, y: 0, z: 0}
+--- !u!114 &944513651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944513641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d1192e684358cf42aa8eb3ac292aec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionPatrol
+  speed: 1.5
 --- !u!1 &974022470
 GameObject:
   m_ObjectHideFlags: 0
