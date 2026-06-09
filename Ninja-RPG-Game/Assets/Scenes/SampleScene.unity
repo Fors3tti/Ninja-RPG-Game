@@ -907,6 +907,7 @@ GameObject:
   - component: {fileID: 205122498}
   - component: {fileID: 205122500}
   - component: {fileID: 205122501}
+  - component: {fileID: 205122502}
   m_Layer: 6
   m_Name: Enemy_Flam
   m_TagString: Enemy
@@ -1158,6 +1159,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActionChase
   chaseSpeed: 3
+--- !u!114 &205122502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205122491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd10c30cfd77a5479016f4781705f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionAttackRange
+  attackRange: 2.5
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &215377116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,6 +1192,7 @@ GameObject:
   - component: {fileID: 215377123}
   - component: {fileID: 215377124}
   - component: {fileID: 215377125}
+  - component: {fileID: 215377126}
   m_Layer: 6
   m_Name: Enemy_Snake
   m_TagString: Enemy
@@ -1413,6 +1431,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActionChase
   chaseSpeed: 3.5
+--- !u!114 &215377126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215377116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd10c30cfd77a5479016f4781705f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionAttackRange
+  attackRange: 2
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &427369931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1464,7 @@ GameObject:
   - component: {fileID: 427369938}
   - component: {fileID: 427369939}
   - component: {fileID: 427369940}
+  - component: {fileID: 427369941}
   m_Layer: 6
   m_Name: Enemy_Cyclope
   m_TagString: Enemy
@@ -1668,6 +1703,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActionChase
   chaseSpeed: 2.5
+--- !u!114 &427369941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427369931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd10c30cfd77a5479016f4781705f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionAttackRange
+  attackRange: 2
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,6 +1873,7 @@ GameObject:
   - component: {fileID: 541010862}
   - component: {fileID: 541010863}
   - component: {fileID: 541010864}
+  - component: {fileID: 541010865}
   m_Layer: 6
   m_Name: Enemy_Bamboo
   m_TagString: Enemy
@@ -2016,6 +2068,15 @@ MonoBehaviour:
     - Decision: {fileID: 541010863}
       TrueState: 
       FalseState: Wander
+    - Decision: {fileID: 541010865}
+      TrueState: Attack
+      FalseState: 
+  - ID: Attack
+    Actions: []
+    Transitions:
+    - Decision: {fileID: 541010865}
+      TrueState: 
+      FalseState: Chase
 --- !u!114 &541010862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2060,6 +2121,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActionChase
   chaseSpeed: 1.5
+--- !u!114 &541010865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541010855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd10c30cfd77a5479016f4781705f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionAttackRange
+  attackRange: 2
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &593097554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2528,6 +2605,7 @@ GameObject:
   - component: {fileID: 944513651}
   - component: {fileID: 944513652}
   - component: {fileID: 944513653}
+  - component: {fileID: 944513654}
   m_Layer: 6
   m_Name: Enemy_Beast
   m_TagString: Enemy
@@ -2779,6 +2857,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActionChase
   chaseSpeed: 4
+--- !u!114 &944513654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944513641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd10c30cfd77a5479016f4781705f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionAttackRange
+  attackRange: 2.5
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &974022470
 GameObject:
   m_ObjectHideFlags: 0
@@ -5195,6 +5289,7 @@ GameObject:
   - component: {fileID: 1233518475}
   - component: {fileID: 1233518477}
   - component: {fileID: 1233518478}
+  - component: {fileID: 1233518479}
   m_Layer: 6
   m_Name: Enemy_Mushroom
   m_TagString: Enemy
@@ -5448,6 +5543,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActionChase
   chaseSpeed: 4.5
+--- !u!114 &1233518479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233518468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd10c30cfd77a5479016f4781705f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionAttackRange
+  attackRange: 2.5
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &1243943256
 GameObject:
   m_ObjectHideFlags: 0
@@ -5907,6 +6018,7 @@ GameObject:
   - component: {fileID: 1463479104}
   - component: {fileID: 1463479105}
   - component: {fileID: 1463479106}
+  - component: {fileID: 1463479107}
   m_Layer: 6
   m_Name: Enemy_Slime
   m_TagString: Enemy
@@ -6160,6 +6272,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActionChase
   chaseSpeed: 2.5
+--- !u!114 &1463479107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463479095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd10c30cfd77a5479016f4781705f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionAttackRange
+  attackRange: 2.5
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &1495773108
 GameObject:
   m_ObjectHideFlags: 0
@@ -6177,6 +6305,7 @@ GameObject:
   - component: {fileID: 1495773115}
   - component: {fileID: 1495773116}
   - component: {fileID: 1495773117}
+  - component: {fileID: 1495773118}
   m_Layer: 6
   m_Name: Enemy_Reptile
   m_TagString: Enemy
@@ -6415,6 +6544,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActionChase
   chaseSpeed: 3
+--- !u!114 &1495773118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495773108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd10c30cfd77a5479016f4781705f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionAttackRange
+  attackRange: 2
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &1501403146
 GameObject:
   m_ObjectHideFlags: 0

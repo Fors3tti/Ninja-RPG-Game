@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DecisionDetectPlayer : FSMDecision
 {
+    [Header("Config")]
     [SerializeField] private float range;
     [SerializeField] private LayerMask playerMask;
 
