@@ -21,7 +21,7 @@ public class ActionChase : FSMAction
     {
         if (enemyBrain.Player == null) return;
         Vector3 dirToPlayer = enemyBrain.Player.position - transform.position;
-        if (dirToPlayer.magnitude >= 1.3f)
+        if (dirToPlayer.magnitude >= 1f)
         {
             transform.Translate(dirToPlayer.normalized * (chaseSpeed * Time.deltaTime));
         }

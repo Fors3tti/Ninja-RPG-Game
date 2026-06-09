@@ -906,6 +906,7 @@ GameObject:
   - component: {fileID: 205122497}
   - component: {fileID: 205122498}
   - component: {fileID: 205122500}
+  - component: {fileID: 205122501}
   m_Layer: 6
   m_Name: Enemy_Flam
   m_TagString: Enemy
@@ -1094,7 +1095,8 @@ MonoBehaviour:
       TrueState: Chase
       FalseState: 
   - ID: Chase
-    Actions: []
+    Actions:
+    - {fileID: 205122501}
     Transitions:
     - Decision: {fileID: 205122500}
       TrueState: 
@@ -1143,6 +1145,19 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &205122501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205122491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be82e2df80620d43ac5d51cf0efc9c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionChase
+  chaseSpeed: 3
 --- !u!1 &215377116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,6 +1174,7 @@ GameObject:
   - component: {fileID: 215377122}
   - component: {fileID: 215377123}
   - component: {fileID: 215377124}
+  - component: {fileID: 215377125}
   m_Layer: 6
   m_Name: Enemy_Snake
   m_TagString: Enemy
@@ -1347,7 +1363,8 @@ MonoBehaviour:
       TrueState: Chase
       FalseState: 
   - ID: Chase
-    Actions: []
+    Actions:
+    - {fileID: 215377125}
     Transitions:
     - Decision: {fileID: 215377124}
       TrueState: 
@@ -1383,6 +1400,19 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &215377125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215377116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be82e2df80620d43ac5d51cf0efc9c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionChase
+  chaseSpeed: 3.5
 --- !u!1 &427369931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,6 +1429,7 @@ GameObject:
   - component: {fileID: 427369937}
   - component: {fileID: 427369938}
   - component: {fileID: 427369939}
+  - component: {fileID: 427369940}
   m_Layer: 6
   m_Name: Enemy_Cyclope
   m_TagString: Enemy
@@ -1587,7 +1618,8 @@ MonoBehaviour:
       TrueState: Chase
       FalseState: 
   - ID: Chase
-    Actions: []
+    Actions:
+    - {fileID: 427369940}
     Transitions:
     - Decision: {fileID: 427369939}
       TrueState: 
@@ -1623,6 +1655,19 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &427369940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427369931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be82e2df80620d43ac5d51cf0efc9c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionChase
+  chaseSpeed: 2.5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,6 +1821,7 @@ GameObject:
   - component: {fileID: 541010861}
   - component: {fileID: 541010862}
   - component: {fileID: 541010863}
+  - component: {fileID: 541010864}
   m_Layer: 6
   m_Name: Enemy_Bamboo
   m_TagString: Enemy
@@ -1964,7 +2010,8 @@ MonoBehaviour:
       TrueState: Chase
       FalseState: 
   - ID: Chase
-    Actions: []
+    Actions:
+    - {fileID: 541010864}
     Transitions:
     - Decision: {fileID: 541010863}
       TrueState: 
@@ -2000,6 +2047,19 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &541010864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541010855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be82e2df80620d43ac5d51cf0efc9c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionChase
+  chaseSpeed: 1.5
 --- !u!1 &593097554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2467,6 +2527,7 @@ GameObject:
   - component: {fileID: 944513648}
   - component: {fileID: 944513651}
   - component: {fileID: 944513652}
+  - component: {fileID: 944513653}
   m_Layer: 6
   m_Name: Enemy_Beast
   m_TagString: Enemy
@@ -2655,7 +2716,8 @@ MonoBehaviour:
       TrueState: Chase
       FalseState: 
   - ID: Chase
-    Actions: []
+    Actions:
+    - {fileID: 944513653}
     Transitions:
     - Decision: {fileID: 944513652}
       TrueState: 
@@ -2704,6 +2766,19 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &944513653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944513641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be82e2df80620d43ac5d51cf0efc9c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionChase
+  chaseSpeed: 4
 --- !u!1 &974022470
 GameObject:
   m_ObjectHideFlags: 0
@@ -5119,6 +5194,7 @@ GameObject:
   - component: {fileID: 1233518474}
   - component: {fileID: 1233518475}
   - component: {fileID: 1233518477}
+  - component: {fileID: 1233518478}
   m_Layer: 6
   m_Name: Enemy_Mushroom
   m_TagString: Enemy
@@ -5307,7 +5383,8 @@ MonoBehaviour:
       TrueState: Chase
       FalseState: 
   - ID: Chase
-    Actions: []
+    Actions:
+    - {fileID: 1233518478}
     Transitions:
     - Decision: {fileID: 1233518477}
       TrueState: 
@@ -5358,6 +5435,19 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &1233518478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233518468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be82e2df80620d43ac5d51cf0efc9c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionChase
+  chaseSpeed: 4.5
 --- !u!1 &1243943256
 GameObject:
   m_ObjectHideFlags: 0
@@ -6086,6 +6176,7 @@ GameObject:
   - component: {fileID: 1495773114}
   - component: {fileID: 1495773115}
   - component: {fileID: 1495773116}
+  - component: {fileID: 1495773117}
   m_Layer: 6
   m_Name: Enemy_Reptile
   m_TagString: Enemy
@@ -6274,7 +6365,8 @@ MonoBehaviour:
       TrueState: Chase
       FalseState: 
   - ID: Chase
-    Actions: []
+    Actions:
+    - {fileID: 1495773117}
     Transitions:
     - Decision: {fileID: 1495773116}
       TrueState: 
@@ -6310,6 +6402,19 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &1495773117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495773108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be82e2df80620d43ac5d51cf0efc9c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionChase
+  chaseSpeed: 3
 --- !u!1 &1501403146
 GameObject:
   m_ObjectHideFlags: 0
