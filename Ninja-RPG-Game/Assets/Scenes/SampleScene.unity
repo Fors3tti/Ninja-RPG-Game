@@ -1102,6 +1102,15 @@ MonoBehaviour:
     - Decision: {fileID: 205122500}
       TrueState: 
       FalseState: Patrol
+    - Decision: {fileID: 205122502}
+      TrueState: Attack
+      FalseState: 
+  - ID: Attack
+    Actions: []
+    Transitions:
+    - Decision: {fileID: 205122502}
+      TrueState: 
+      FalseState: Chase
 --- !u!114 &205122498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,7 +1180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffd10c30cfd77a5479016f4781705f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecisionAttackRange
-  attackRange: 2.5
+  attackRange: 2
   playerMask:
     serializedVersion: 2
     m_Bits: 128
@@ -1387,6 +1396,15 @@ MonoBehaviour:
     - Decision: {fileID: 215377124}
       TrueState: 
       FalseState: Wander
+    - Decision: {fileID: 215377126}
+      TrueState: Attack
+      FalseState: 
+  - ID: Attack
+    Actions: []
+    Transitions:
+    - Decision: {fileID: 215377126}
+      TrueState: 
+      FalseState: Chase
 --- !u!114 &215377123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1414,7 +1432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9b9c99843996143b70100b6833b967, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecisionDetectPlayer
-  range: 3
+  range: 4
   playerMask:
     serializedVersion: 2
     m_Bits: 128
@@ -1659,6 +1677,15 @@ MonoBehaviour:
     - Decision: {fileID: 427369939}
       TrueState: 
       FalseState: Wander
+    - Decision: {fileID: 427369941}
+      TrueState: Attack
+      FalseState: 
+  - ID: Attack
+    Actions: []
+    Transitions:
+    - Decision: {fileID: 427369941}
+      TrueState: 
+      FalseState: Chase
 --- !u!114 &427369938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1686,7 +1713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9b9c99843996143b70100b6833b967, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecisionDetectPlayer
-  range: 3
+  range: 4
   playerMask:
     serializedVersion: 2
     m_Bits: 128
@@ -2104,7 +2131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9b9c99843996143b70100b6833b967, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecisionDetectPlayer
-  range: 3
+  range: 4
   playerMask:
     serializedVersion: 2
     m_Bits: 128
@@ -2800,6 +2827,15 @@ MonoBehaviour:
     - Decision: {fileID: 944513652}
       TrueState: 
       FalseState: Patrol
+    - Decision: {fileID: 944513654}
+      TrueState: Attack
+      FalseState: 
+  - ID: Attack
+    Actions: []
+    Transitions:
+    - Decision: {fileID: 944513654}
+      TrueState: 
+      FalseState: Chase
 --- !u!114 &944513650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2827,7 +2863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1192e684358cf42aa8eb3ac292aec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActionPatrol
-  speed: 3.5
+  speed: 3
 --- !u!114 &944513652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2856,7 +2892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be82e2df80620d43ac5d51cf0efc9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActionChase
-  chaseSpeed: 4
+  chaseSpeed: 6
 --- !u!114 &944513654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2869,7 +2905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffd10c30cfd77a5479016f4781705f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecisionAttackRange
-  attackRange: 2.5
+  attackRange: 2
   playerMask:
     serializedVersion: 2
     m_Bits: 128
@@ -5484,6 +5520,15 @@ MonoBehaviour:
     - Decision: {fileID: 1233518477}
       TrueState: 
       FalseState: Patrol
+    - Decision: {fileID: 1233518479}
+      TrueState: Attack
+      FalseState: 
+  - ID: Attack
+    Actions: []
+    Transitions:
+    - Decision: {fileID: 1233518479}
+      TrueState: 
+      FalseState: Chase
 --- !u!114 &1233518475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5555,7 +5600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffd10c30cfd77a5479016f4781705f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecisionAttackRange
-  attackRange: 2.5
+  attackRange: 2
   playerMask:
     serializedVersion: 2
     m_Bits: 128
@@ -6213,6 +6258,15 @@ MonoBehaviour:
     - Decision: {fileID: 1463479105}
       TrueState: 
       FalseState: Patrol
+    - Decision: {fileID: 1463479107}
+      TrueState: Attack
+      FalseState: 
+  - ID: Attack
+    Actions: []
+    Transitions:
+    - Decision: {fileID: 1463479107}
+      TrueState: 
+      FalseState: Chase
 --- !u!114 &1463479103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6284,7 +6338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffd10c30cfd77a5479016f4781705f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecisionAttackRange
-  attackRange: 2.5
+  attackRange: 2
   playerMask:
     serializedVersion: 2
     m_Bits: 128
@@ -6500,6 +6554,15 @@ MonoBehaviour:
     - Decision: {fileID: 1495773116}
       TrueState: 
       FalseState: Wander
+    - Decision: {fileID: 1495773118}
+      TrueState: Attack
+      FalseState: 
+  - ID: Attack
+    Actions: []
+    Transitions:
+    - Decision: {fileID: 1495773118}
+      TrueState: 
+      FalseState: Chase
 --- !u!114 &1495773115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6527,7 +6590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9b9c99843996143b70100b6833b967, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecisionDetectPlayer
-  range: 3
+  range: 4
   playerMask:
     serializedVersion: 2
     m_Bits: 128
