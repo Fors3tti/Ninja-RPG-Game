@@ -16,13 +16,13 @@ public class ActionAttack : FSMAction
 
     public override void Act()
     {
-        
+        AttackPlayer();
     }
 
     private void AttackPlayer()
     {
         if (enemyBrain.Player == null) return;
-        timer -= Time.time;
+        timer -= Time.deltaTime;
         if (timer <= 0f)
         {
             IDamageable player = enemyBrain.Player.GetComponent<IDamageable>();

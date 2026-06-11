@@ -907,6 +907,7 @@ GameObject:
   - component: {fileID: 205122500}
   - component: {fileID: 205122501}
   - component: {fileID: 205122502}
+  - component: {fileID: 205122503}
   m_Layer: 6
   m_Name: Enemy_Flam
   m_TagString: Enemy
@@ -1105,7 +1106,8 @@ MonoBehaviour:
       TrueState: Attack
       FalseState: 
   - ID: Attack
-    Actions: []
+    Actions:
+    - {fileID: 205122503}
     Transitions:
     - Decision: {fileID: 205122502}
       TrueState: 
@@ -1183,6 +1185,20 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &205122503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205122491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3c3307f408b8447a1e52b1be6763be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionAttack
+  damage: 2
+  timeBtwAttacks: 1
 --- !u!1 &215377116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,6 +1217,7 @@ GameObject:
   - component: {fileID: 215377124}
   - component: {fileID: 215377125}
   - component: {fileID: 215377126}
+  - component: {fileID: 215377127}
   m_Layer: 6
   m_Name: Enemy_Snake
   m_TagString: Enemy
@@ -1399,7 +1416,8 @@ MonoBehaviour:
       TrueState: Attack
       FalseState: 
   - ID: Attack
-    Actions: []
+    Actions:
+    - {fileID: 215377127}
     Transitions:
     - Decision: {fileID: 215377126}
       TrueState: 
@@ -1464,6 +1482,20 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &215377127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215377116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3c3307f408b8447a1e52b1be6763be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionAttack
+  damage: 3
+  timeBtwAttacks: 1.5
 --- !u!1 &427369931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,6 +1514,7 @@ GameObject:
   - component: {fileID: 427369939}
   - component: {fileID: 427369940}
   - component: {fileID: 427369941}
+  - component: {fileID: 427369942}
   m_Layer: 6
   m_Name: Enemy_Cyclope
   m_TagString: Enemy
@@ -1680,7 +1713,8 @@ MonoBehaviour:
       TrueState: Attack
       FalseState: 
   - ID: Attack
-    Actions: []
+    Actions:
+    - {fileID: 427369942}
     Transitions:
     - Decision: {fileID: 427369941}
       TrueState: 
@@ -1745,6 +1779,20 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &427369942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427369931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3c3307f408b8447a1e52b1be6763be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionAttack
+  damage: 2
+  timeBtwAttacks: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,6 +1981,7 @@ GameObject:
   - component: {fileID: 541010863}
   - component: {fileID: 541010864}
   - component: {fileID: 541010865}
+  - component: {fileID: 541010866}
   m_Layer: 6
   m_Name: Enemy_Bamboo
   m_TagString: Enemy
@@ -2131,7 +2180,8 @@ MonoBehaviour:
       TrueState: Attack
       FalseState: 
   - ID: Attack
-    Actions: []
+    Actions:
+    - {fileID: 541010866}
     Transitions:
     - Decision: {fileID: 541010865}
       TrueState: 
@@ -2196,6 +2246,20 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &541010866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541010855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3c3307f408b8447a1e52b1be6763be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionAttack
+  damage: 2
+  timeBtwAttacks: 1
 --- !u!1 &593097554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,6 +2729,7 @@ GameObject:
   - component: {fileID: 944513652}
   - component: {fileID: 944513653}
   - component: {fileID: 944513654}
+  - component: {fileID: 944513655}
   m_Layer: 6
   m_Name: Enemy_Beast
   m_TagString: Enemy
@@ -2863,7 +2928,8 @@ MonoBehaviour:
       TrueState: Attack
       FalseState: 
   - ID: Attack
-    Actions: []
+    Actions:
+    - {fileID: 944513655}
     Transitions:
     - Decision: {fileID: 944513654}
       TrueState: 
@@ -2941,6 +3007,20 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &944513655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944513641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3c3307f408b8447a1e52b1be6763be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionAttack
+  damage: 3
+  timeBtwAttacks: 1.5
 --- !u!1 &974022470
 GameObject:
   m_ObjectHideFlags: 0
@@ -5358,6 +5438,7 @@ GameObject:
   - component: {fileID: 1233518477}
   - component: {fileID: 1233518478}
   - component: {fileID: 1233518479}
+  - component: {fileID: 1233518480}
   m_Layer: 6
   m_Name: Enemy_Mushroom
   m_TagString: Enemy
@@ -5556,7 +5637,8 @@ MonoBehaviour:
       TrueState: Attack
       FalseState: 
   - ID: Attack
-    Actions: []
+    Actions:
+    - {fileID: 1233518480}
     Transitions:
     - Decision: {fileID: 1233518479}
       TrueState: 
@@ -5636,6 +5718,20 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &1233518480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233518468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3c3307f408b8447a1e52b1be6763be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionAttack
+  damage: 2
+  timeBtwAttacks: 1
 --- !u!1 &1243943256
 GameObject:
   m_ObjectHideFlags: 0
@@ -6096,6 +6192,7 @@ GameObject:
   - component: {fileID: 1463479105}
   - component: {fileID: 1463479106}
   - component: {fileID: 1463479107}
+  - component: {fileID: 1463479108}
   m_Layer: 6
   m_Name: Enemy_Slime
   m_TagString: Enemy
@@ -6294,7 +6391,8 @@ MonoBehaviour:
       TrueState: Attack
       FalseState: 
   - ID: Attack
-    Actions: []
+    Actions:
+    - {fileID: 1463479108}
     Transitions:
     - Decision: {fileID: 1463479107}
       TrueState: 
@@ -6374,6 +6472,20 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &1463479108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463479095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3c3307f408b8447a1e52b1be6763be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionAttack
+  damage: 2
+  timeBtwAttacks: 1
 --- !u!1 &1495773108
 GameObject:
   m_ObjectHideFlags: 0
@@ -6392,6 +6504,7 @@ GameObject:
   - component: {fileID: 1495773116}
   - component: {fileID: 1495773117}
   - component: {fileID: 1495773118}
+  - component: {fileID: 1495773119}
   m_Layer: 6
   m_Name: Enemy_Reptile
   m_TagString: Enemy
@@ -6590,7 +6703,8 @@ MonoBehaviour:
       TrueState: Attack
       FalseState: 
   - ID: Attack
-    Actions: []
+    Actions:
+    - {fileID: 1495773119}
     Transitions:
     - Decision: {fileID: 1495773118}
       TrueState: 
@@ -6655,6 +6769,20 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &1495773119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495773108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3c3307f408b8447a1e52b1be6763be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionAttack
+  damage: 3
+  timeBtwAttacks: 1.5
 --- !u!1 &1501403146
 GameObject:
   m_ObjectHideFlags: 0
