@@ -34,7 +34,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4696515061618532955}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 30.41596, y: 0.31615, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70921fbea628e094c9274b48400d836d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActionWander
-  speed: 3
+  speed: 2.5
   wanderTime: 1
   moveRange: {x: 2, y: 2}
 --- !u!114 &8643215470773754230
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffd10c30cfd77a5479016f4781705f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecisionAttackRange
-  attackRange: 2
+  attackRange: 0.65
   playerMask:
     serializedVersion: 2
     m_Bits: 128
