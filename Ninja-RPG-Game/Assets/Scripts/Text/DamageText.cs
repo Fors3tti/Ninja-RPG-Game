@@ -1,16 +1,18 @@
+using TMPro;
 using UnityEngine;
 
 public class DamageText : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [Header("Config")]
+    [SerializeField] private TextMeshProUGUI damageTMP;
+
+    public void SetDamageText(float damage)
     {
-        
+        damageTMP.text = damage.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DestroyText()
     {
-        
+        Destroy(gameObject);
     }
 }

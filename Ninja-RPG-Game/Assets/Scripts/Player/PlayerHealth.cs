@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public void TakeDamage(float amount)
     {
         stats.Health -= amount;
+        DamageManager.Instance.ShowDamageText(amount, transform);
         if (stats.Health <= 0f)
         {
             stats.Health = 0f;
