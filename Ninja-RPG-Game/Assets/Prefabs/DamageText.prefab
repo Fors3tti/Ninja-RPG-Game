@@ -112,6 +112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1772507240885682915}
   - component: {fileID: 1584040059120336663}
+  - component: {fileID: 4200845470446372123}
   m_Layer: 0
   m_Name: DamageText
   m_TagString: Untagged
@@ -157,6 +158,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4200845470446372123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110824396299112039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c7a75987a1f22f488788bcf2a76a6b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamageText
 --- !u!1 &9114929309709974274
 GameObject:
   m_ObjectHideFlags: 0
