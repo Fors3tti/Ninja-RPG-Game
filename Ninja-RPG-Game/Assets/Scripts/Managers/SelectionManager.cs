@@ -1,16 +1,44 @@
+using System;
 using UnityEngine;
 
 public class SelectionManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static event Action<EnemyBrain> OnEnemySelectedEvent;
+    public static event Action OnNoSelectionEvent;
+
+    [Header("Config")]
+    [SerializeField] private LayerMask enemyMask;
+
+    private Camera mainCamera;
+
+    private void Awake()
     {
-        
+        mainCamera = Camera.main;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        SelectEnemy();
+    }
+
+    private void SelectEnemy()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit2D hit = Physics2D.Raycast(mainCamera.ScreenToWorldPoint(
+                Input.mousePosition), Vector2.zero, Mathf.Infinity, enemyMask);
+            if (hit.collider != null)
+            {
+                EnemyBrain enemy = hit.collider.GetComponent<EnemyBrain>();
+                if (enemy != null)
+                {
+                    OnEnemySelectedEvent?.Invoke(enemy);
+                }
+            }
+            else
+            {
+                OnNoSelectionEvent?.Invoke();
+            }
+        }
     }
 }
