@@ -178,7 +178,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""11e7ee0a-08ca-4b86-a62a-0e5433a7b2fd"",
-                    ""path"": ""<Keyboard>/x"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

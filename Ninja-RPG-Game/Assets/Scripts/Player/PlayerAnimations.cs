@@ -33,7 +33,7 @@ public class PlayerAnimations : MonoBehaviour
         animator.SetFloat(moveY, dir.y);
     }
 
-    public void SetAttackingAnimation(bool value)
+    public void SetAttackAnimation(bool value)
     {
         animator.SetBool(attacking, value);
     }

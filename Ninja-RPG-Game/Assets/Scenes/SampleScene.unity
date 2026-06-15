@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 8528057}
   - component: {fileID: 8528060}
   - component: {fileID: 8528061}
+  - component: {fileID: 8528063}
   m_Layer: 7
   m_Name: Player_Ninja
   m_TagString: Untagged
@@ -396,6 +397,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.74959505, y: 0.50009704}
   m_EdgeRadius: 0
+--- !u!114 &8528063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c533bb53794c6742957a4c5d07c0103, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
 --- !u!1 &91204606
 GameObject:
   m_ObjectHideFlags: 0
