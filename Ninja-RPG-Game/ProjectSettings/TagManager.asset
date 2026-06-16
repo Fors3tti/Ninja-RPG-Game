@@ -66,6 +66,9 @@ TagManager:
   - name: HouseBack
     uniqueID: 4205020129
     locked: 0
+  - name: Projectile
+    uniqueID: 4242550935
+    locked: 0
   - name: UI
     uniqueID: 257868141
     locked: 0
