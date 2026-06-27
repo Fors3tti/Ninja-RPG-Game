@@ -5,15 +5,16 @@ public class Projectile : MonoBehaviour
     [Header("Config")]
     [SerializeField] private float speed;
 
-    public Vector3 Direction { get; private set; }
+    public Vector3 Direction { get; set; }
 
     private void Update()
     {
         transform.Translate(Direction * (speed * Time.deltaTime));
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Collision");
+        Debug.Log(other.name);
+        Destroy(gameObject);
     }
 }

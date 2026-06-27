@@ -409,6 +409,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c533bb53794c6742957a4c5d07c0103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
+  initialWeapon: {fileID: 11400000, guid: 5b12f28d19f353b438d7a9ca19b0aa3e, type: 2}
+  attackPositions:
+  - {fileID: 1139192975}
+  - {fileID: 1619655673}
+  - {fileID: 2074973602}
+  - {fileID: 1191544787}
 --- !u!1 &91204606
 GameObject:
   m_ObjectHideFlags: 0
